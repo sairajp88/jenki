@@ -18,6 +18,7 @@ public class SumWebTest {
 
     @Before
     public void setUp() {
+        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless=new");
         driver = new ChromeDriver(options);
